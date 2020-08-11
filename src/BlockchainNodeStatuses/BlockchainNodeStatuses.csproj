@@ -21,6 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="WebApi\Models\Nodes\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlockchainNodeStatuses.Common\BlockchainNodeStatuses.Common.csproj" />
     <ProjectReference Include="..\BlockchainNodeStatuses.ApiContract\BlockchainNodeStatuses.ApiContract.csproj" />
   </ItemGroup>
 

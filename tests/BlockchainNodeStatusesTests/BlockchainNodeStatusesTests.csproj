@@ -24,7 +24,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\BlockchainNodeStatuses.ApiClient\BlockchainNodeStatuses.ApiClient.csproj" />
     <ProjectReference Include="..\..\src\BlockchainNodeStatuses.ApiContract\BlockchainNodeStatuses.ApiContract.csproj" />
-    <ProjectReference Include="..\..\src\BlockchainNodeStatuses.Common\BlockchainNodeStatuses.Common.csproj" />
     <ProjectReference Include="..\..\src\BlockchainNodeStatuses\BlockchainNodeStatuses.csproj" />
   </ItemGroup>
 

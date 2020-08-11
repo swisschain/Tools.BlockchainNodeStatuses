@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Autofac;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using BlockchainNodeStatuses.Common.Configuration;
-using BlockchainNodeStatuses.Common.Domain.AppFeatureExample;
-using BlockchainNodeStatuses.Common.Persistence;
+using BlockchainNodeStatuses.Configuration;
+using BlockchainNodeStatuses.Domain;
 using BlockchainNodeStatuses.GrpcServices;
 using Swisschain.Sdk.Server.Common;
 
@@ -21,8 +21,7 @@ namespace BlockchainNodeStatuses
         {
             base.ConfigureServicesExt(services);
 
-            services.AddPersistence(Config.Db.ConnectionString);
-            services.AddAppFeatureExample();
+            
         }
 
         protected override void RegisterEndpoints(IEndpointRouteBuilder endpoints)
@@ -30,6 +29,15 @@ namespace BlockchainNodeStatuses
             base.RegisterEndpoints(endpoints);
 
             endpoints.MapGrpcService<MonitoringService>();
+        }
+
+        protected override void ConfigureContainerExt(ContainerBuilder builder)
+        {
+            base.ConfigureContainerExt(builder);
+
+            builder.RegisterType<NodeStatusService>()
+                .As<INodeStatusService>()
+                .SingleInstance();
         }
     }
 }

@@ -26,8 +26,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockchainNodeStatuses.ApiC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockchainNodeStatusesTests", "tests\BlockchainNodeStatusesTests\BlockchainNodeStatusesTests.csproj", "{4C51C936-D545-49A9-816A-4F2C357B56DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockchainNodeStatuses.Common", "src\BlockchainNodeStatuses.Common\BlockchainNodeStatuses.Common.csproj", "{2BFF98C7-1714-4000-A468-DBD9C24E7B02}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github workflow", "Github workflow", "{54F26A6C-5B76-40E5-8E9C-2FA0551BC226}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\ci.yml = .github\workflows\ci.yml
@@ -92,10 +90,6 @@ Global
 		{4C51C936-D545-49A9-816A-4F2C357B56DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C51C936-D545-49A9-816A-4F2C357B56DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C51C936-D545-49A9-816A-4F2C357B56DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BFF98C7-1714-4000-A468-DBD9C24E7B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BFF98C7-1714-4000-A468-DBD9C24E7B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BFF98C7-1714-4000-A468-DBD9C24E7B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BFF98C7-1714-4000-A468-DBD9C24E7B02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

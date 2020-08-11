@@ -1,4 +1,4 @@
-﻿namespace BlockchainNodeStatuses.Common.Configuration
+﻿namespace BlockchainNodeStatuses.Configuration
 {
     public class DbConfig
     {

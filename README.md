@@ -7,3 +7,10 @@
 
 # Environment Variables
 [Logging](https://github.com/swisschain/Swisschain.Sdk.Server/blob/master/README.md#logging)
+
+# Instructions
+
+1. configure environment variable `AccessToken` - set secret token to acce to POST method to update status
+2. run docker image `docker.io/swisschains/tools-blockchain-node-statuses:VERSION`
+3. use http port 5000
+4. check swagger: `/swagger/ui/index.html`
