@@ -1,0 +1,7 @@
+{
+  "RabbitMq": {
+    "HostUrl": "rabbit.tools.svc.cluster.local",
+    "Username": "${Tools-RabbitMq-Login}",
+    "Password": "${Tools-RabbitMq-Password}"
+  }
+}

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Tools.BlockchainNodeStatuses.TestClient</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BlockchainNodeStatuses.ApiClient\BlockchainNodeStatuses.ApiClient.csproj" />
+    <ProjectReference Include="..\..\src\BlockchainNodeStatuses.ApiContract\BlockchainNodeStatuses.ApiContract.csproj" />
+  </ItemGroup>
+
+</Project>
