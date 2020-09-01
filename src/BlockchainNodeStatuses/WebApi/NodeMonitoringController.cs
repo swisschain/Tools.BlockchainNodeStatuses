@@ -28,6 +28,12 @@ namespace BlockchainNodeStatuses.WebApi
         }
 
         [HttpPost("get-statuses")]
+        public Task<List<NodeStatusInfo>> GetPostNodeStatusesAsync()
+        {
+            return _nodeStatusService.GetAllStatusesAsync();
+        }
+        
+        [HttpGet("get-statuses")]
         public Task<List<NodeStatusInfo>> GetNodeStatusesAsync()
         {
             return _nodeStatusService.GetAllStatusesAsync();
